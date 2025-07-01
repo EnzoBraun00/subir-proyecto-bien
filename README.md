@@ -1,70 +1,95 @@
-# Getting Started with Create React App
+Aclaración: ** Es el mismo proyecto que tendría que haber estado subido, está Pc es muy nueva y los comandos no estabán bien funcionando, recien regresé y dije a ver que hice antes de dormir, y no me había percatado, me daba lastima dejarlo subido bien sin las carpetas, lo terminé de configurar rápido, y aqui lo resuvo como lo tenía para ello desde el principio, el despliegue o el código evidentemente y se puede ver, no se tocó nada, ya estaba y sigue en correcto funcionamiento, pero asñillo duermo tranquilo 😴 **
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Catálogo de Productos - Aplicación Web React Este repositorio contiene una aplicación web tipo Catálogo de Productos, desarrollada en React.js. El objetivo principal fue construir una herramienta eficiente para la gestión de un inventario de productos, destacar el diseño para el poco tiempo, je.
 
-## Available Scripts
+Implementación y Funcionalidades Clave
 
-In the project directory, you can run:
+El proyecto se diseñó para cumplir con los siguientes puntos críticos, logrando un conjunto de funcionalidades sólidas:
 
-### `npm start`
+Gestión CRUD Completa:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Creación: Integración de un formulario intuitivo para la inserción de nuevos productos con validación de datos.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Lectura: Presentación de la información a través de una tabla paginada y ordenable.
 
-### `npm test`
+Actualización: Funcionalidad de edición in-situ, permitiendo modificar registros existentes de manera fluida.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Eliminación: Mecanismo directo para la baja de productos individuales.
 
-### `npm run build`
+Persistencia de Datos (Local Storage): La aplicación implementa persistencia de datos mediante la API de localStorage del navegador. Esto asegura que el estado del catálogo se mantenga entre sesiones, incluso tras el cierre de la aplicación. Para una gestión modular y reusable de esta característica, se desarrolló un Hook personalizado (useLocalStorage).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Paginación del Conjunto de Datos: Para optimizar la experiencia de usuario con grandes volúmenes de datos, se incorporó un sistema de paginación que limita la visualización a un número configurable de productos por página. Esto se complementa con controles de navegación intuitivos.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Ordenamiento Dinámico: Se ofrece la capacidad de ordenar la lista de productos por nombre (ascendente o descendente), lo que mejora significativamente la capacidad de búsqueda y análisis de datos. Se incluye una opción para restablecer el orden inicial.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Arquitectura y Diseño UI/UX:
 
-### `npm run eject`
+La interfaz de usuario se construyó exclusivamente con React-Bootstrap, utilizando sus clases y componentes para garantizar un diseño responsivo y una estética profesional.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+El código se estructura de forma modular, dividiendo la lógica en componentes (ProductForm, ProductList, Pagination) y encapsulando lógicas complejas en Hooks, lo que favorece la mantenibilidad y escalabilidad.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Validación de Formularios: Se implementaron validaciones client-side en el formulario de ingreso de productos para asegurar la integridad de los datos.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Pruebas Unitarias: Se incluyen pruebas unitarias básicas para los componentes críticos (ProductList.test.js, ProductForm.test.js), utilizando Jest y React Testing Library para validar el comportamiento esperado.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Stack Tecnológico
 
-## Learn More
+React.js: Core de la aplicación.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+React-Bootstrap: Framework de UI y componentes.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Bootstrap CSS: Estilos base y sistema de grid.
 
-### Code Splitting
+JavaScript (ES6+): Lógica de programación.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+HTML5 / CSS3: Estructura y presentación.
 
-### Analyzing the Bundle Size
+Local Storage API: Mecanismo de persistencia de datos.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Jest: Framework de testing.
 
-### Making a Progressive Web App
+React Testing Library: Utilidad para testing de componentes React. Se usaron los componentes de React cuándo lo vi necesario.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Configuración y Ejecución Local
 
-### Advanced Configuration
+Para poner el proyecto en marcha en tu entorno de desarrollo, sigue los siguientes pasos:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Clonar el Repositorio:
 
-### Deployment
+Bash git clone https://github.com/EnzoBraun00/ReactWebPruebaTecnicaH2.git cd ReactWebPruebaTecnicaH2 Instalar Dependencias:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Bash npm install Ejecutar la Aplicación (Modo Desarrollo):
 
-### `npm run build` fails to minify
+Bash npm start La aplicación se iniciará en http://localhost:3000/.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Ejecutar Pruebas Unitarias:
+
+Bash npm test Interacción con la Aplicación
+
+Boostrap npm install bootstrap react-bootstrap
+
+Una vez desplegada localmente:
+
+Añadir Productos: Utiliza el formulario en el panel izquierdo para ingresar datos y haz clic en "Añadir Producto".
+
+Editar Productos: Selecciona "Editar" en la fila del producto deseado. El formulario se pre-llenará y podrás guardar los cambios.
+
+Eliminar Productos: Usa el botón "Eliminar" junto al producto correspondiente en la tabla.
+
+Conectar con Vercel:
+
+npm install -g vercel
+
+vercel login
+
+npm run build
+
+vercel
+
+Y
+
+✅ Production: https://react-prueba-tecnica-h2-9e2drlbiv-enzo-braun-s-projects.vercel.app
+
+Navegación y Ordenamiento: La tabla soporta paginación y ordenamiento por nombre (A-Z, Z-A, o reset) mediante los controles ubicados sobre ella.
+
+Espero guste, Gracias por la oportunidad, slds, y tengo otro mientras me queda tiempo para hacer, pero con api
