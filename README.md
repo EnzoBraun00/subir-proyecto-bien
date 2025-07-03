@@ -1,6 +1,7 @@
 Aclaración: ** Es el mismo proyecto que tendría que haber estado subido, está Pc es muy nueva y los comandos no estabán bien funcionando, recien regresé y dije a ver que hice antes de dormir, y no me había percatado, me daba lastima dejarlo subido bien sin las carpetas, lo terminé de configurar rápido, y aqui lo resuvo como lo tenía para ello desde el principio, el despliegue o el código evidentemente y se puede ver, no se tocó nada, ya estaba y sigue en correcto funcionamiento, pero asñillo duermo tranquilo 😴 **
 
 Versión hecha a posterior coorrigiendo erroes: https://github.com/EnzoBraun00/proyecto-h2v.final.git
+Deplyment de versión: https://proyecto-h2v-final.vercel.app
 
 Catálogo de Productos - Aplicación Web React Este repositorio contiene una aplicación web tipo Catálogo de Productos, desarrollada en React.js. El objetivo principal fue construir una herramienta eficiente para la gestión de un inventario de productos, destacar el diseño para el poco tiempo, je.
 
